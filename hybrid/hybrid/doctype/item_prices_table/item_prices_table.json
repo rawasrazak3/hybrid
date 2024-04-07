@@ -1,0 +1,127 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-04-04 18:45:45.461072",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "item_code",
+  "item_name",
+  "column_break_3p7xl",
+  "valuation_rate",
+  "cost_price",
+  "column_break_vtoua",
+  "selling_price_1",
+  "selling_price_2",
+  "selling_price_3",
+  "selling_price_4",
+  "selling_price_5",
+  "selling_price_6"
+ ],
+ "fields": [
+  {
+   "columns": 1,
+   "fieldname": "item_code",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Item Code",
+   "options": "Item",
+   "reqd": 1
+  },
+  {
+   "columns": 3,
+   "fetch_from": "item_code.item_name",
+   "fieldname": "item_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Item Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_3p7xl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 1,
+   "fieldname": "valuation_rate",
+   "fieldtype": "Currency",
+   "label": "Valuation Rate",
+   "options": "Company:company:default_currency",
+   "read_only": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "cost_price",
+   "fieldtype": "Currency",
+   "label": "Incoming Rate",
+   "options": "Company:company:default_currency",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_vtoua",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 1,
+   "fieldname": "selling_price_1",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Retail Price(PCS)",
+   "options": "Company:company:default_currency"
+  },
+  {
+   "columns": 1,
+   "fieldname": "selling_price_2",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Wholesale Price(PCS)",
+   "options": "Company:company:default_currency"
+  },
+  {
+   "columns": 1,
+   "fieldname": "selling_price_3",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Special Price(PCS)",
+   "options": "Company:company:default_currency"
+  },
+  {
+   "columns": 1,
+   "fieldname": "selling_price_4",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Retail Price(Box)",
+   "options": "Company:company:default_currency"
+  },
+  {
+   "columns": 1,
+   "fieldname": "selling_price_5",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Wholesale Price(Box)",
+   "options": "Company:company:default_currency"
+  },
+  {
+   "columns": 1,
+   "fieldname": "selling_price_6",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Special Price(Box)",
+   "options": "Company:company:default_currency"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-04-06 13:00:29.921849",
+ "modified_by": "Administrator",
+ "module": "Hybrid",
+ "name": "Item Prices Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
