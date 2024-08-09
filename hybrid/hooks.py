@@ -32,6 +32,10 @@ app_license = "MIT"
 # doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
 # doctype_calendar_js = {"doctype" : "public/js/doctype_calendar.js"}
 
+doctype_js = {
+    "Sales Invoice": "public/js/sales_vo.js"
+    }
+
 # Home Pages
 # ----------
 
@@ -213,3 +217,20 @@ app_license = "MIT"
 # auth_hooks = [
 # 	"hybrid.auth.validate"
 # ]
+
+fixtures=[
+    {
+    	"doctype": "Custom Field",
+        "filters": [
+            [
+                "name",
+                "in",
+                [ 
+                    "Sales Invoice-custom_profit_rate",
+                    "Sales Invoice Item-custom_valuation_rate",
+                    "Sales Invoice-custom_price_list",
+                 ]
+            ]
+        ]
+    }
+]
