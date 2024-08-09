@@ -128,7 +128,7 @@ frappe.ui.form.on('Sales Invoice Item', {
 frappe.ui.form.on('Sales Invoice', {
     setup: function(frm) {
         var isPromptOpen = false;
-        var allowedUsers = ['huzaifa@thekidsmania.com', 'kidsmaniakwt1@gmail.com', 'Administrator']
+        var allowedUsers = ['joby@hybridintco.com', 'Administrator']
 
         frm.fields_dict['custom_profit_rate'].$wrapper.on('click', function() {
             if (!allowedUsers.includes(frappe.session.user)) {
