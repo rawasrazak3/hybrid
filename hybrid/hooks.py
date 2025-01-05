@@ -67,7 +67,11 @@ doctype_js = {
 
 # before_install = "hybrid.install.before_install"
 # after_install = "hybrid.install.after_install"
+after_install = "hybrid.setup.install.after_install"
 
+on_session_creation = [
+	"hybrid.utils.set_session_defaults"
+]
 # Uninstallation
 # ------------
 
